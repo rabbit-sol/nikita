@@ -3,7 +3,8 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { AiFillEye } from "react-icons/ai";
-
+import { blog } from "../Data/blogdata"
+import { Link } from "react-router-dom"
 function ProjectCards(props) {
     return (
         <Card className="project-card-view ">
@@ -27,15 +28,14 @@ function ProjectCards(props) {
                 <Card.Text style={{ textAlign: "justify" }}>
                     {props.description}
                 </Card.Text>
-                <Button variant="primary" className=" flex flex-row " href={props.ghLink} target="_blank">
-                   Read More
+                <Button variant="primary" className=" flex flex-row">
+                    <Link to={`/details/${props.id}`} className='link'>Read More</Link>
                     
                 </Button>
                 {"\n"}
                 {"\n"}
 
-                {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
+              
 
 
 

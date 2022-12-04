@@ -25,10 +25,11 @@ function Projects() {
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     <Col md={4} className="project-card">
                         <ProjectCard
+                            id={1}
                             imgPath={chatify}
                             isBlog={false}
-                            title="Chatify"
-                            description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging."
+                            title="How To Create an NFT: A Step-By-Step Guide"
+                            description="NFTs are more than just a way of selling art, they can offer exclusive communities and secure ownership of real-life items as digital assets."
                             ghLink="https://github.com/soumyajit4419/Chatify"
                             demoLink="https://chatify-49.web.app/"
                         />
@@ -36,10 +37,11 @@ function Projects() {
 
                     <Col md={4} className="project-card">
                         <ProjectCard
+                            id={2}
                             imgPath={bitsOfCode}
                             isBlog={false}
-                            title="Bits-0f-C0de"
-                            description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+                            title="How Can NFTs Be Valuable?"
+                            description="There is no rulebook on how to determine the value of an NFT. Some values are usually indicated by the last sales of a particular NFT."
                             ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
                             demoLink="https://blogs.soumya-jit.tech/"
                         />
@@ -49,10 +51,11 @@ function Projects() {
 
                     <Col md={4} className="project-card">
                         <ProjectCard
+                            id={3}
                             imgPath={leaf}
                             isBlog={false}
-                            title="Plant AI"
-                            description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. "
+                            title="How Will The Metaverse Change Health Care?"
+                            description="The digital age is here. The Pandemic has led to an increase in innovation in health care, as well as the emergence of new business models."
                             ghLink="https://github.com/soumyajit4419/Plant_AI"
                             demoLink="https://plant49-ai.herokuapp.com/"
                         />
