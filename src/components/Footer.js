@@ -1,7 +1,7 @@
 import { Link }from "react-router-dom";
 import React from "react";
 import { footer } from "./Data/global";
-import { Web3Button } from "@thirdweb-dev/react";
+import { Web3Button, useAddress } from "@thirdweb-dev/react";
 import { useContract } from '@thirdweb-dev/react'
 
 import buy_coffee from  "../Assets/buy-me-a-coffee.svg"
@@ -9,7 +9,7 @@ import paypal from  "../Assets/paypal.svg"
 function Footer() {
     const address = useAddress();
  const { contract, isLoading, error } = useContract("0xaeF12764A9CBBa5c28867203B4d202252574A2fd", "nft-collection")
-    const walletAddress = address
+    
 
 
   return (
@@ -68,9 +68,9 @@ function Footer() {
               
                 
                           <Web3Button
-                              contractAddress="0x7eF48F3469C6e351666C103018F1b48C28fF020D"
+                              contractAddress={contract}
                               action={(contract) => {
-                                  contract.call("OwnerMint", 1, "0xbe257fC43bAFc6af01d8C4001a73BF3F0853d0a4")
+                                  contract.call("mintTo", address)
                               }}
                           >
                              Buy Me A Coffee
