@@ -1,12 +1,12 @@
 import { Link }from "react-router-dom";
 import React from "react";
 import { footer } from "./Data/global";
-
+import { Web3Button } from "@thirdweb-dev/react";
 import buy_coffee from  "../Assets/buy-me-a-coffee.svg"
 import paypal from  "../Assets/paypal.svg"
 function Footer() {
   return (
-    <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 bg-bg">
+    <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 ">
       <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
         {footer.columns.map((item, index) => {
           return (
@@ -59,19 +59,20 @@ function Footer() {
                 </a>
               </div>
             )}
-            {footer.support.paypal !== "" && (
+            
               <div>
-                <a
-                  href={`https://paypal.me/${footer.support.paypal}`}
-                  target="_blank"
-                >
-                  <img
-                                      src={paypal}
-                    className="h-12 mr-2 hover:opacity-80 opacity-100 transition-opacity"
-                  />
-                </a>
+              
+                
+                          <Web3Button
+                              contractAddress="0x7eF48F3469C6e351666C103018F1b48C28fF020D"
+                              action={(contract) => {
+                                  contract.call("OwnerMint", 1, "0xbe257fC43bAFc6af01d8C4001a73BF3F0853d0a4")
+                              }}
+                          >
+                             Buy Me A Coffee
+                          </Web3Button>
               </div>
-            )}
+           
             <p className="text-fun-gray text-xs pt-1">
               {footer.support.message}
             </p>

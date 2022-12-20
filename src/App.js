@@ -16,8 +16,13 @@ import {
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
+
+import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
+
+const activeChainId = ChainId.Goerli;
 function App() {
   const [load, upadateLoad] = useState(true);
 
@@ -29,7 +34,8 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  return (
+    return (
+        <ThirdwebProvider desiredChainId={activeChainId}>
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
@@ -45,7 +51,8 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+            </Router>
+        </ThirdwebProvider>
   );
 }
 

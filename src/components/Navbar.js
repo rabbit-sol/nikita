@@ -13,7 +13,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import { BsGithub } from "react-icons/bs";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -95,19 +95,20 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
+                      <Nav.Item className="fork-btn">
+                          <Button
+                              href="https://www.codegrepper.com/profile/shubham-kunwar"
+                              target="_blank"
+                              className="fork-btn-inner"
+                          >
+                              <BsGithub style={{ fontSize: "1.2em" }} />{" "}
+                              <AiFillStar style={{ fontSize: "1.1em" }} />
+                          </Button>
+                      </Nav.Item>
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                              href="https://www.codegrepper.com/profile/shubham-kunwar"
                 target="_blank"
                 className="fork-btn-inner"
               >
