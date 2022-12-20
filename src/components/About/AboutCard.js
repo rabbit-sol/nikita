@@ -8,10 +8,10 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />I am a junior pursuing IMSC in Maths and Computing in BIT
-            Mesra.
+            Hi Everyone, I am <span className="purple">Shubham Kunwar </span>
+            from <span className="purple">Garhwal, India.</span>
+                      <br />I am a junior full-stack Blockchain Developer building 
+                      <a className="purple" target="_blank" href="https://metakul.in">Metakul</a>
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -21,17 +21,15 @@ function AboutCard() {
               <ImPointRight /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writting Tech Blogs
+              <ImPointRight /> Reading Books
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Helping New Devs
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+         
+                  <footer className="blockquote-footer purple"><a href="https://metakul.in" className=" purple" target="_blank">Claim A Free Nft</a></footer>
         </blockquote>
       </Card.Body>
     </Card>

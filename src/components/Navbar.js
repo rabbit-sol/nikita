@@ -41,7 +41,7 @@ function NavBar() {
         <Navbar.Brand href="/" className="d-flex">
                   <h1 className="heading-name">
                      
-                      <strong className="main-name"> NV</strong>
+                      <strong className="main-name"> SK</strong>
                   </h1>
         </Navbar.Brand>
         <Navbar.Toggle

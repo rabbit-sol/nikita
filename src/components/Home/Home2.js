@@ -56,7 +56,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+                          <img src="https://raw.githubusercontent.com/rabbit-sol/metakul-nft/main/hero1.webp" className="img-thumbnail img-fluid border rounded" alt="Responsive image" alt="avatar" />
             </Tilt>
           </Col>
               </Row>
@@ -65,7 +65,7 @@ function Home2() {
                   <div className="mt-20 mb-20 space-y-32">
                   <Projects />
                   <Testimonials />
-                  <Cta />
+                 <Cta/>
                   </div>
                   </Row>
                      

@@ -45,7 +45,8 @@ function About() {
         </h1>
         <Toolstack />
 
-        <Github />
+              <Github />
+              <footer className=" purple"><a href="https://github.com/rabbit-sol" className=" purple" target="_blank">See On Github</a></footer>
       </Container>
     </Container>
   );
