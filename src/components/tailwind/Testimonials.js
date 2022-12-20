@@ -23,13 +23,13 @@ function Testimonials() {
                   />
                 </>
               )}
-                  <p className="text-base italic relative testimonialQuote text-fun-gray font-monospace">
+                  <h6 className=" italic relative testimonialQuote text-fun-gray font-monospace">
                 "{item.quote}"
-              </p>
-              <p className="mt-4 text-xs text-fun-gray">
+              </h6>
+              <h5 className="mt-4  text-fun-gray">
                 <b className="text-fun-pink font-monospace">{item.name}</b> -{" "}
                 {item.job}
-              </p>
+              </h5>
               {index === 2 && (
                 <img
                   className="sqD top-[-30px] right-[-15px] w-11"

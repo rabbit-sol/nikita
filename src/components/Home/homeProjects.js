@@ -19,19 +19,19 @@ function Projects() {
                 <h1 className="project-heading">
                     My Recent <strong className="purple">Works </strong>
                 </h1>
-                <p style={{ color: "white" }}>
+                <h5 style={{ color: "white" }}>
                     Here are a few projects I've worked on recently.
-                </p>
+                </h5>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     <Col md={4} className="project-card">
                         <ProjectCard
                             id={1}
                             imgPath={chatify}
                             isBlog={false}
-                            title="How To Create an NFT: A Step-By-Step Guide"
-                            description="NFTs are more than just a way of selling art, they can offer exclusive communities and secure ownership of real-life items as digital assets."
+                            title="NFT Mint Website"
+                            description="Custom ERC721 Contract with web3js and multiple wallet Integeration on Ethereum blockchain"
                             ghLink="https://github.com/soumyajit4419/Chatify"
-                            demoLink="https://chatify-49.web.app/"
+                            demoLink="https://walletconnect-anotherdev.vercel.app/"
                         />
                     </Col>
 
@@ -40,10 +40,10 @@ function Projects() {
                             id={2}
                             imgPath={bitsOfCode}
                             isBlog={false}
-                            title="How Can NFTs Be Valuable?"
-                            description="There is no rulebook on how to determine the value of an NFT. Some values are usually indicated by the last sales of a particular NFT."
+                            title="Own Nft Project"
+                            description="The Innovative Solana Metaverse Website Reforming Vedic Education via blockchain."
                             ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-                            demoLink="https://blogs.soumya-jit.tech/"
+                            demoLink="https://metakul.in"
                         />
                     </Col>
 
@@ -54,23 +54,23 @@ function Projects() {
                             id={3}
                             imgPath={leaf}
                             isBlog={false}
-                            title="How Will The Metaverse Change Health Care?"
-                            description="The digital age is here. The Pandemic has led to an increase in innovation in health care, as well as the emergence of new business models."
+                            title="NFT Mint Website"
+                            description="Minting Website with burnable WL token in Solana Blockchain"
                             ghLink="https://github.com/soumyajit4419/Plant_AI"
-                            demoLink="https://plant49-ai.herokuapp.com/"
+                            demoLink="https://metacopsnft.io"
                         />
                     </Col>
 
 
                 </Row>
                 <div className="relative w-half  mt-2">
-                    <Link className="text-decoration-none"
-                        to="/project"
+                    <a className="text-decoration-none"
+                        href="https://github.com/rabbit-sol?tab=repositories" target="_blank"
                         >
                         <div className="mt-8 max-w-sm md:max-w-xl border rounded-pill border-fun-pink mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-fun-pink bg-fun-pink-darkerer hover:bg-fun-pink hover:text-white transition-colors text-white cursor-pointer">
-                            View All
+                            View All On Github
                         </div>
-                    </Link>
+                    </a>
                 </div>
             </Container>
             

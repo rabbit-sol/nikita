@@ -23,13 +23,13 @@ export const footer = {
         //   leavesWebsite: false,
         // },
         {
-          name: "Projects",
-          link: "/project",
+          name: "Resume",
+          link: "/resume",
           leavesWebsite: false,
         },
         {
-          name: "Blog",
-          link: "/designs",
+          name: "About",
+          link: "/about",
           leavesWebsite: false,
         },
       ],

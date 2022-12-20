@@ -20,29 +20,29 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+                          LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with  Metaverse and NFTs in 2019 and I have at least learn a lot, I think… 🤷‍♂️
+              I fell in love with  Blockchain and Web3.0 in 2020 and I have at least learn a lot, I think… 🤷‍♂️
               <br />
                           <br />Being born a non-conformist, I was intrigued by{" "}
               <i>
-                              <b className="purple">the idea of learning about virtual worlds that did not conform to traditional standards of Web 2.0. </b>
+                              <b className="text-fun-pink">the idea of building virtual worlds and writing smart contracts, that did not conform to traditional standards of Web 2.0. </b>
               </i>
               <br />
               <br />
-           Needless to say, since then, I completely immersed myself in the world of the metaverse. &nbsp;
+           Needless to say, since then, I completely immersed myself in the world Blockchain Development. &nbsp;
               <i>
-                              <b className="purple">Metaverse & Blockchain is my passion.</b> The desire to learn more about Metaverse has spurred me to{" "}
-                <b className="purple">
-                                  read 50+ books, take over a dozen courses, and devour whitepapers.
+                              <b className="text-fun-pink">Metaverse & Blockchain is my passion.</b> The desire to learn more about Metaverse has spurred me to{" "}
+                              <b className="text-fun-pink">
+                                  read 20+ whitepapers & take over a dozen courses.
                 </b>
               </i>
               <br />
               <br />
-              To stay up to date with the latest trends, <b className="purple"></b> 
+              To stay up to date with the latest trends,
               <i>
-                <b className="purple">
+                              <b className="text-fun-pink">
                   {" "}
                                   I am also an active member of many discords and Twitter groups.
 
@@ -50,7 +50,7 @@ function Home2() {
               </i>
                           &nbsp; like{" "}
               <i>
-                <b className="purple">BAYC, World Of Women</b>
+                              <b className="text-fun-pink">Thirdweb, Metaplex, Ethereum.org, MetaSchool etc</b>
               </i>
             </p>
           </Col>

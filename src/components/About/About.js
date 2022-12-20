@@ -8,10 +8,12 @@ import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
 function About() {
-  return (
+    return (
+      <>
     <Container fluid className="about-section">
-      <Particle />
-      <Container>
+  
+          <Container>
+              <Particle />
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -28,7 +30,7 @@ function About() {
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            style={{ paddingTop: "100px", paddingBottom: "0px" }}
             className="about-img"
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
@@ -46,10 +48,12 @@ function About() {
         <Toolstack />
 
               <Github />
-              <footer className=" purple"><a href="https://github.com/rabbit-sol" className=" purple" target="_blank">See On Github</a></footer>
-      </Container>
+            
+          </Container>
     </Container>
-  );
+            <footer style={{ paddingBottom: "60px" }} className=" purple"><a href="https://github.com/rabbit-sol" className=" purple" target="_blank">See On Github</a></footer>
+  </>
+      );
 }
 
 export default About;

@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import {
   SiLinux,
   SiVisualstudiocode,
-  SiPostman,
+ 
   SiHeroku,
   SiVercel,
 } from "react-icons/si";
@@ -13,7 +13,7 @@ function Toolstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
    
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+              <SiVisualstudiocode className="img-responsive center-block d-block mx-auto"/>
       </Col>
 
 
@@ -21,10 +21,10 @@ function Toolstack() {
               <FaHardHat className="img-responsive center-block d-block mx-auto" />
           </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+              <SiVercel className="img-responsive center-block d-block mx-auto" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+              <SiHeroku className="img-responsive center-block d-block mx-auto"/>
       </Col>
     </Row>
   );

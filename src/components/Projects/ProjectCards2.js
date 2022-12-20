@@ -14,8 +14,9 @@ function ProjectCards(props) {
 
             <Card.Body>
                 <div className=" d-flex justify-content-center">
-                    <Card.Title className="justify-content-center pt-1">{props.title}</Card.Title>
-                    <a href={props.ghLink} target="_blank" rel="noreferrer">
+                   
+                    <a href={props.demoLink} className="ml-2 " target="_blank" rel="noreferrer">
+                        <Card.Title className="text-fun-pink justify-content-center pt-1">{props.title}</Card.Title>
                         <img
                             src="https://cdn3d.iconscout.com/3d/premium/thumb/expand-5591096-4652873.png"
                             width={28}
@@ -28,10 +29,10 @@ function ProjectCards(props) {
                 <Card.Text style={{ textAlign: "justify" }}>
                     {props.description}
                 </Card.Text>
-                <Button variant="primary" className=" flex flex-row">
-                    <Link to={`/details/${props.id}`} className='link'>Read More</Link>
-                    
-                </Button>
+               
+                
+                {/* <Link to={`/details/${props.id}`} className='link'>Live Demo</Link> */}
+             
                 {"\n"}
                 {"\n"}
 

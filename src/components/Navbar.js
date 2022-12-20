@@ -72,18 +72,6 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
@@ -97,7 +85,7 @@ function NavBar() {
 
                       <Nav.Item className="fork-btn">
                           <Button
-                              href="https://www.codegrepper.com/profile/shubham-kunwar"
+                              href="https://github.com/rabbit-sol"
                               target="_blank"
                               className="fork-btn-inner"
                           >

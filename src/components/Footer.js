@@ -2,9 +2,16 @@ import { Link }from "react-router-dom";
 import React from "react";
 import { footer } from "./Data/global";
 import { Web3Button } from "@thirdweb-dev/react";
+import { useContract } from '@thirdweb-dev/react'
+
 import buy_coffee from  "../Assets/buy-me-a-coffee.svg"
 import paypal from  "../Assets/paypal.svg"
 function Footer() {
+    const address = useAddress();
+ const { contract, isLoading, error } = useContract("0xaeF12764A9CBBa5c28867203B4d202252574A2fd", "nft-collection")
+    const walletAddress = address
+
+
   return (
     <footer className="flex flex-col w-screen px-5 py-10 border-t border-fun-pink-darker z-5 ">
       <div className="w-full max-w-4xl m-auto grid grid-cols-2 sm:grid-cols-3 justify-between items-start">
@@ -48,15 +55,12 @@ function Footer() {
                   <div className="space-y-2 mt-4 w-full flex  items-center sm:items-start flex-col grid justify-items-center">
             {footer.support.buymeacoffee !== "" && (
               <div>
-                <a
-                  href={`https://buymeacoffee.com/${footer.support.buymeacoffee}`}
-                  target="_blank"
-                >
+               
                   <img
                                       src={buy_coffee}
                     className="h-12 mr-2 hover:opacity-80 opacity-100 transition-opacity"
                   />
-                </a>
+               
               </div>
             )}
             
@@ -114,10 +118,10 @@ function Footer() {
           <div className="mt-2 text-xs ">
             Made by{" "}
             <a
-              href="mailto:contact@braydentw.io"
+                          href="mailto:shubhamkunwar10feb@gmail.com?subject=Personal Message&body=Message"
               className="text-fun-gray-light font-medium"
             >
-              Brayden Wright
+             Shubham Kunwar
             </a>
             . All rights reserved.
           </div>

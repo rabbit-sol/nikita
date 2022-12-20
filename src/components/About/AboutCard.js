@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Shubham Kunwar </span>
             from <span className="purple">Garhwal, India.</span>
-                      <br />I am a junior full-stack Blockchain Developer building 
+                      <br />I am a junior full-stack Blockchain Developer building &nbsp;
                       <a className="purple" target="_blank" href="https://metakul.in">Metakul</a>
             <br />
             <br />
@@ -29,7 +29,7 @@ function AboutCard() {
           </ul>
 
          
-                  <footer className="blockquote-footer purple"><a href="https://metakul.in" className=" purple" target="_blank">Claim A Free Nft</a></footer>
+                  <footer  className="blockquote-footer purple">Freelance Blockchain Dev</footer>
         </blockquote>
       </Card.Body>
     </Card>
